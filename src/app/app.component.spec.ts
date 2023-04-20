@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cypres-test'`, () => {
+  it(`should have as title 'cypress-test'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cypres-test');
+    expect(app.title).toEqual('cypress-test');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('cypres-test app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('cypress-test app is running!');
   });
 });
