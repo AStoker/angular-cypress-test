@@ -183,6 +183,13 @@ export class Interval {
     this.#hours = hours;
     this.#minutes = minutes;
     this.#seconds = seconds;
+
+    const test = {
+      foo: { bar: 'baz' }
+    };
+    const optionalChain = test?.foo.bar;
+    console.log(optionalChain);
+
     if (hours < 0) {
       throw new Error(`Hours (${hours}) out of bounds [0,Infinity)`);
     }
